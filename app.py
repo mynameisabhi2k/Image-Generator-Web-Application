@@ -49,7 +49,7 @@ def upload_file():
         file.save(filepath)
 
         # Transcribe audio
-        transcription = transcribe_audio('static/Recording.m4a')
+        transcription = transcribe_audio(filepath)
 
         # Generate image
         image_url = generate_image(transcription)
